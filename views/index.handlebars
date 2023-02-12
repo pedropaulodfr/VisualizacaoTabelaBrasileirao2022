@@ -1,0 +1,42 @@
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+
+
+<div class="tabela-container">
+    <h1 class="title">Tabela Brasileirão Série A 2022</h1>
+    <table>
+        <tr>
+            <th class="first-th">Posição</th>
+            <th>Time</th>
+            <th>PTS</th>
+            <th>J</th>
+            <th>V</th>
+            <th>D</th>
+            <th>E</th>
+            <th>GP</th>
+            <th>GC</th>
+            <th>SG</th>
+            <th>CA</th>
+            <th>CV</th>
+            <th>%</th>
+            <th class="last-th">Recentes</th>
+        </tr>
+        {{#each dados}}
+            <tr>
+                <td>{{this.Posicao}}</td>
+                <td class="linha-escudo-time"><img class="escudo" src={{this.Escudo}} />{{this.Time}}</td>
+                <td>{{this.Pontos}}</td>
+                <td>{{this.Jogos}}</td>
+                <td>{{this.Vitorias}}</td>
+                <td>{{this.Derrotas}}</td>
+                <td>{{this.Empates}}</td>
+                <td>{{this.Gols-Pro}}</td>
+                <td>{{this.Gols-Contra}}</td>
+                <td>{{this.Saldo-Gols}}</td>
+                <td>{{this.Cartoes-Amarelos}}</td>
+                <td>{{this.Cartoes-Vermelhos}}</td>
+                <td>{{this.Aproveitamento}}</td>
+                <td>{{this.Recentes}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
