@@ -9,17 +9,16 @@
     margin: 50px;
     font-family: 'Poppins', sans-serif;
     font-size: 2.2em;
-    color: #54a0ff;
+    color: #0077B6;
 }
 
 table {
     font-family: 'Poppins', sans-serif;
-    background-color: #ecf0f1;
+    background-color: #F5F5F5;
     margin-bottom: 50px;
-    border-bottom: solid 5px #1dd1a1;
+    border-bottom: solid 5px #0077B6;
     border-radius: 20px;
-    box-shadow: -13px 13px 5px -10px rgba(0,0,0,0.36);
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.08);
 }
 
 tr, td, th {
@@ -27,7 +26,7 @@ tr, td, th {
 }
 
 th {
-    background-color: #10ac84;
+    background-color: #0077B6;
     color: #ffffff;
 }
 
@@ -41,7 +40,7 @@ th {
 }
 
 tr:hover{
-    background-color: #ffffffc2;
+    background-color: #D3D3D3;
     cursor: pointer;
 }
 

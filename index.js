@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     .then((response) => {
         const dados = response.data
         
-        res.render("index", {dados})
+        res.render("classificacao", {dados})
     })
     .catch((error) => {
         console.log(error);
