@@ -3,7 +3,7 @@ const app = express()
 const axios = require("axios")
 const handlebars = require("express-handlebars")
 const bodyParser = require("body-parser")
-const PORTA = 4040
+const PORTA = process.env.PORT || 4040
 
 // Confirgurando Body Parser
 app.use(bodyParser.urlencoded({extended: false}))
@@ -16,7 +16,7 @@ app.use(express.static("public"))
 
 
 app.get("/", (req, res) => {
-    axios.get("http://127.0.0.1:5000/tabela")
+    axios.get("https://apitabelabrasileirao2022.onrender.com/tabela")
     .then((response) => {
         const dados = response.data
         
