@@ -1,0 +1,23 @@
+{{>seletores}}
+
+<link rel="stylesheet" type="text/css" href="/css/tabelas.css">
+
+<div class="tabela-container">
+    <h1 class="title">Artilheiros Brasileirão Série A 2022</h1>
+    <table>
+        <tr>
+            <th class="first-th">Posição</th>
+            <th>Jogador</th>
+            <th>Clube</th>
+            <th class="last-th">Gols</th>
+        </tr>
+        {{#each dados}}
+            <tr>
+                <td>{{this.Posicao}}</td>
+                <td>{{this.Apelido}}</td>
+                <td>{{this.Clube}}</td>
+                <td>{{this.Gols}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
